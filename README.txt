@@ -1,7 +1,8 @@
 Some test for playing around with Dual Tree Complex Wavelet Transform (DTCWT)
 
 1. Denoising
-To test various 
+To test various scenarios for image denoising (with complex white noise).
+Dependencies: dddtree2 from Wavelet Toolbox.
 
 2. Unwrapping Test
 For inputting into LASSO algorithms, need to rasterize the 5D dual tree into a 1D matrix. This script demonstrates the use of the two functions
