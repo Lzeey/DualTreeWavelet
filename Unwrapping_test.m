@@ -31,6 +31,13 @@ figure;
 subplot(121); imshow(abs(X_ori));
 subplot(122); imshow(abs(X_rewrap));
 
+
+%%Attempt cpx dual tree function
+X = randn(2^12) + 1j*randn(2^12);
+Wx = perform_cpx_dualtree_transform(X,4);
+X_recov = perform_cpx_dualtree_transform(Wx,4);
+
+
 % %% Attempt to denoise
 % % loop through scales:
 % thr = 1; %arbitrary
