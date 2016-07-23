@@ -12,6 +12,7 @@ function [tree_cfs] = rewrap_tree(y, m,n,J)
 %           param: composes of several fields:
 
 %% Pre-allocate memory
+%%%%%%%%%%%%%%%%%%%%%%%
 tree_cfs = cell(1,J+1);
 for j = 1:J
     tree_cfs{1,j} = zeros(m/(2^j),n/(2^j),3,2,2);
